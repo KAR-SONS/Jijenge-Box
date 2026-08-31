@@ -72,11 +72,11 @@ export default function ClaimModal({ tileIndex, onClose, onClaimed }) {
         </div>
 
         <div className={`field ${errors.url ? 'invalid' : ''}`}>
-          <label htmlFor="url-input">Your link</label>
+          <label htmlFor="url-input">Your Social Media link (Any Platform)</label>
           <input
             id="url-input"
             type="text"
-            placeholder="instagram.com/yourname"
+            placeholder="e.g instagram.com/yourname"
             value={url}
             onChange={e => setUrl(e.target.value)}
             onKeyDown={e => e.key === 'Enter' && submit()}
