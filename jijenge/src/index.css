@@ -128,7 +128,7 @@ body {
   font-size: 24px; flex-shrink: 0;
 }
 .king-label {
-  font-size: 11px;
+  font-size: 15px;
   color: #A09880;
   text-transform: uppercase;
   letter-spacing: 0.06em;
@@ -401,6 +401,22 @@ button { font-family: inherit; cursor: pointer; border: none; }
   border-radius: var(--radius-md);
 }
 .error-state { color: var(--red); }
+
+/* ── Ad banner ───────────────────────────────────────────── */
+.ad-banner-wrap {
+  margin: 32px 0 40px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  background: var(--bone-dim);
+}
+.ad-label {
+  font-size: 10px;
+  color: var(--ink-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 6px 12px 0;
+}
 
 /* ── Footer ──────────────────────────────────────────────── */
 .foot {

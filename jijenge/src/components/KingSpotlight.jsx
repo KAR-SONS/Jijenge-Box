@@ -3,7 +3,7 @@ import { openPaystackPopup } from '../lib/paystack'
 import { crownKing } from '../lib/appwrite'
 import { getDeviceId, hasClaimedTile, getClaimedTile } from '../lib/device'
 
-const AMOUNT = Number(import.meta.env.VITE_OVERTHROW_AMOUNT) || 10
+const AMOUNT = Number(import.meta.env.VITE_OVERTHROW_AMOUNT) || 50
 
 export default function KingSpotlight({ king, boxes, onOverthrown, onFindRandom }) {
   const [paying, setPaying] = useState(false)
@@ -60,7 +60,7 @@ export default function KingSpotlight({ king, boxes, onOverthrown, onFindRandom 
       <div className="king-left">
         <div className="crown-badge">👑</div>
         <div className="king-info">
-          <div className="king-label">Random king of the grid</div>
+          <div className="king-label">king of the grid - Be the first every user sees</div>
           {hasKing ? (
             <>
               <div className="king-name">@{king.handle}</div>

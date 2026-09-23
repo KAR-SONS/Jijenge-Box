@@ -6,6 +6,7 @@ import KingSpotlight from './components/KingSpotlight'
 import ClaimModal from './components/ClaimModal'
 import ViewModal from './components/ViewModal'
 import Toast, { showToast } from './components/Toast'
+import AdBanner from './components/AdBanner'
 
 export default function App() {
   const { boxes, king, loading, error, gridSize } = useGrid()
@@ -62,7 +63,7 @@ export default function App() {
           <h1>Build your corner<br />of the internet.</h1>
           <p>
             Claim one small square, drop your most important link right now,
-            and see who's holding the whole grid's attention as the random king.
+            and see who's holding the whole grid's attention as the Grid King.
           </p>
           <div className="progress-bar">
             <div className="progress-fill" style={{ width: `${pct}%` }} />
@@ -97,6 +98,8 @@ export default function App() {
             </div>
           )}
         </section>
+
+        <AdBanner />
 
         <footer className="foot">
           <span>Jijenge Box — a shared public grid. Your link is visible to everyone.</span>
